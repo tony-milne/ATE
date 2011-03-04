@@ -30,7 +30,10 @@ gem 'mysql2'
 #   gem 'webrat'
 # end
 
-# RSpec gem
 group :development, :test do
   gem 'rspec-rails'
+  gem 'cucumber-rails'
+  gem 'webrat'
+  gem 'spork'
+  gem 'database_cleaner'
 end
