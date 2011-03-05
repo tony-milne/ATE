@@ -1,10 +1,6 @@
 require 'spec_helper'
 
 describe Bookmark do
-
-
-
-
   context "on bookmark creation" do
     it "links bookmark to site" do
       bookmark = Bookmark.create(:url => "http://idle.slashdot.org/story/11/03/04/1453241/Apple-You-Must-Be-17-To-Use-Opera")
