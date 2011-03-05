@@ -4,6 +4,7 @@ class Bookmark < ActiveRecord::Base
   
   validates_presence_of :url
   validate :is_valid_url
+  validates_uniqueness_of :url
 
   before_create :link_to_site
 

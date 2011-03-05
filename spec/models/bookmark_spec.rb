@@ -30,5 +30,10 @@ describe Bookmark do
     it "fails validation with invalid url in valid format" do
       Bookmark.new(:url => "http://www.sdfasdfasdf.com").should have(1).errors_on(:url)
     end
+
+    it "ensures uniqueness of bookmark" do
+      Bookmark.create(:url => "http://idle.slashdot.org/story/11/03/04/1453241/Apple-You-Must-Be-17-To-Use-Opera")
+      Bookmark.create(:url => "http://idle.slashdot.org/story/11/03/04/1453241/Apple-You-Must-Be-17-To-Use-Opera").should have(1).errors_on(:url)
+    end
   end
 end
