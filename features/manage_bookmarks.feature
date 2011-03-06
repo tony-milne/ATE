@@ -4,11 +4,11 @@ Feature: Manage bookmarks
   
   Scenario: Register new bookmark
     Given I am on the new bookmark page
-    When I fill in "Url" with "url 1"
-    And I fill in "Tags" with "tags 1"
+    When I fill in "Url" with "http://www.slashdot.org/"
+    And I fill in "Tags" with "news nerds"
     And I press "Create"
-    Then I should see "url 1"
-    And I should see "tags 1"
+    Then I should see "http://slashdot.org"
+    And I should see "news nerds"
 
   Scenario: Delete bookmark
     Given the following bookmarks:
