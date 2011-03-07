@@ -32,7 +32,7 @@ describe Bookmark do
       Bookmark.create(:url => "http://idle.slashdot.org/story/11/03/04/1453241/Apple-You-Must-Be-17-To-Use-Opera").should have(1).errors_on(:url)
     end
 
-    it "gets a shortened url"
+    it "gets a shortened url" do
       b = Bookmark.create(:url => "http://idle.slashdot.org/story/11/03/04/1453241/Apple-You-Must-Be-17-To-Use-Opera")
       b.shortened_url.should == "http://tinyurl.com/49yqnto"
     end
