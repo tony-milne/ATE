@@ -13,13 +13,10 @@ Feature: Manage bookmarks
   Scenario: Delete bookmark
     Given the following bookmarks:
       |url|tags|
-      |url 1|tags 1|
-      |url 2|tags 2|
-      |url 3|tags 3|
-      |url 4|tags 4|
+      |http://www.lifehacker.com|tips money-saving diy|
+      |http://www.facebook.com|social-networking|
+      |http://www.spotify.com/uk|music social free|
+      |http://www.slashdot.com|news nerds current|
     When I delete the 3rd bookmark
-    Then I should see the following bookmarks:
-      |Url|Tags|
-      |url 1|tags 1|
-      |url 2|tags 2|
-      |url 4|tags 4|
+    When I go to the bookmarks page
+    Then show me the page

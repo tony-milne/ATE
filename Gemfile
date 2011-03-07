@@ -36,4 +36,5 @@ group :development, :test do
   gem 'webrat'
   gem 'spork'
   gem 'database_cleaner'
+  gem "launchy"
 end

@@ -108,3 +108,245 @@ REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"H
 REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
 REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
 REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/4"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/4"}
+REQUESTING PAGE: GET /bookmarks/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /bookmarks with {"utf8"=>"\xE2\x9C\x93", "bookmark"=>{"url"=>"http://www.slashdot.org/", "tags"=>"news nerds"}, "commit"=>"Create Bookmark"} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/new"}
+REQUESTING PAGE: GET http://example.com/bookmarks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {}
+REQUESTING PAGE: GET /bookmarks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks"}
+REQUESTING PAGE: GET /bookmarks with {} and HTTP headers {"HTTP_REFERER"=>"/bookmarks/4"}

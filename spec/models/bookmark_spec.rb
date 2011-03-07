@@ -20,7 +20,7 @@ describe Bookmark do
     end
 
     it "fails validation with blank url" do
-      Bookmark.new(:url => "").should have(1).errors_on(:url)
+      Bookmark.new(:url => "").should have(2).errors_on(:url)
     end
 
     it "fails validation with invalid url in valid format" do
@@ -31,5 +31,13 @@ describe Bookmark do
       Bookmark.create(:url => "http://idle.slashdot.org/story/11/03/04/1453241/Apple-You-Must-Be-17-To-Use-Opera")
       Bookmark.create(:url => "http://idle.slashdot.org/story/11/03/04/1453241/Apple-You-Must-Be-17-To-Use-Opera").should have(1).errors_on(:url)
     end
+
+    it "gets a shortened url"
+      b = Bookmark.create(:url => "http://idle.slashdot.org/story/11/03/04/1453241/Apple-You-Must-Be-17-To-Use-Opera")
+      b.shortened_url.should == "http://tinyurl.com/49yqnto"
+    end
+
+    it "it gets metadata"
+
   end
 end

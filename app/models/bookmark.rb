@@ -6,7 +6,7 @@ class Bookmark < ActiveRecord::Base
   validate :is_valid_url
   validates_uniqueness_of :url
 
-  before_create :adjust_for_redirect
+  before_save :adjust_for_redirect
   before_create :link_to_site
 
   private
@@ -25,14 +25,12 @@ class Bookmark < ActiveRecord::Base
   # Callback to check url entered by user is valid.  Catches timeouts,
   # invalid URIs and addresses that don't exist
   def is_valid_url
-    begin
-      res = Net::HTTP.get_response(URI.parse(self.url))
+    begin    
+      fetch_url(self.url)
     rescue Errno::ECONNREFUSED
-      if errors[:url].nil?
-        s = "entered is invalid.  Either the site was unreachable or the "
-        s += "URL was entered incorrectly."
-        errors.add(:url, s)
-      end
+      s = "entered is invalid.  Either the site was unreachable or the "
+      s += "URL was entered incorrectly."
+      errors.add(:url, s)
     rescue URI::InvalidURIError
       s = "entered is invalid."
       errors.add(:url, s)
@@ -55,7 +53,14 @@ class Bookmark < ActiveRecord::Base
   # the url or an error
   def fetch_url(url, limit = 10)
     raise ArgumentError, 'HTTP redirect too deep' if limit == 0
-    
+
+    if url
+      # Tries adding http:// to beginning of url
+      if !url.match(/^http:\/\/(.*)/)
+        url = "http://" + url
+      end
+    end
+  
     response = Net::HTTP.get_response(URI.parse(url))
     case response
     when Net::HTTPSuccess     then url
