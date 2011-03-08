@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Title</th>
     <th>Url</th>
     <th>Tags</th>
     <th>Shortened Url</th>
@@ -12,6 +13,7 @@
 
 <% @bookmarks.each do |bookmark| %>
   <tr>
+    <td><%= h bookmark.page_title %></td>
     <td><%= h bookmark.url %></td>
     <td><%= h bookmark.tags %></td>
     <td><%= link_to("#{bookmark.shortened_url}", bookmark.shortened_url) %></td>

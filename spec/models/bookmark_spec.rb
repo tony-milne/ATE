@@ -37,7 +37,12 @@ describe Bookmark do
       b.shortened_url.should == "http://tinyurl.com/4ak7eef"
     end
 
-    it "it gets metadata"
+    it "gets the page title" do
+      b = Bookmark.create(:url => "http://idle.slashdot.org/story/11/03/04/1453241/Apple-You-Must-Be-17-To-Use-Opera")
+      b.page_title.should == "Apple: You Must Be 17+ To Use Opera - Slashdot"
+    end
+    
+    it "gets metadata"
 
   end
 end

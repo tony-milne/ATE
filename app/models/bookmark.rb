@@ -1,4 +1,5 @@
 require "net/http"
+require "open-uri"
 class Bookmark < ActiveRecord::Base
   belongs_to :site
   
@@ -7,6 +8,7 @@ class Bookmark < ActiveRecord::Base
   validates_uniqueness_of :url
 
   before_save :adjust_for_redirect
+  before_save :get_page_title
   before_save :get_shortened_url
   before_create :link_to_site
 
@@ -47,6 +49,12 @@ class Bookmark < ActiveRecord::Base
       res = Net::HTTP.get(URI.parse("http://tinyurl.com/api-create.php?url=#{self.url}"))
       self.shortened_url = res
     end
+  end
+
+  def get_page_title
+    doc = Nokogiri::HTML(open("#{self.url}"))
+    title = doc.at_css "title"
+    self.page_title = title.content
   end
 
 
