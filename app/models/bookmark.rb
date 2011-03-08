@@ -18,18 +18,8 @@ class Bookmark < ActiveRecord::Base
 
   before_create :link_to_site
 
+
   private
-
-  # Follows any redirects and adjusts the user's input
-  def adjust_for_redirect
-    self.url = fetch_url(self.url)
-  end
-
-  # Callback to create association between a bookmark and the site it comes from
-  def link_to_site
-    host = extract_host(url)
-    self.site = Site.find_or_create_by_url(host)
-  end
 
   # Callback to check url entered by user is valid.  Catches timeouts,
   # invalid URIs and addresses that don't exist
@@ -49,21 +39,28 @@ class Bookmark < ActiveRecord::Base
     end
   end
 
-  # Uses url to get tinyurl shortened url
-  def get_shortened_url
-    begin
-      shortened_url = Net::HTTP.get(URI.parse("http://tinyurl.com/api-create.php?url=#{self.url}"))
-      self.shortened_url = shortened_url
-    end
+  # Follows any redirects and adjusts the user's input
+  def adjust_for_redirect
+    self.url = fetch_url(self.url)
   end
 
-  # Uses nokogiri to return title of bookmark page
+  # Callback to create association between a bookmark and the site it comes from
+  def link_to_site
+    host = extract_host(url)
+    self.site = Site.find_or_create_by_url(host)
+  end
+
+  def get_page
+    @doc = Nokogiri::HTML(open("#{self.url}"))
+  end
+
+  # Adds page title to bookmark record
   def get_page_title
-#    @doc = Nokogiri::HTML(open("#{self.url}"))
     title = @doc.at_css "title"
     self.page_title = title.content
   end
 
+  # Adds content type to bookmark record
   def get_content_type
     if !(@doc.at_css("meta[http-equiv='Content-Type']").nil?)
       content_type = @doc.at_css("meta[http-equiv='Content-Type']")["content"]
@@ -71,6 +68,7 @@ class Bookmark < ActiveRecord::Base
     end
   end
 
+  # Adds page description to bookmark record
   def get_description
     if !(@doc.at_css("meta[name='description']").nil?)
       description = @doc.at_css("meta[name='description']")["content"]
@@ -78,8 +76,12 @@ class Bookmark < ActiveRecord::Base
     end
   end
 
-  def get_page
-    @doc = Nokogiri::HTML(open("#{self.url}"))
+  # Uses url to get tinyurl shortened url and adds it bookmark record
+  def get_shortened_url
+    begin
+      shortened_url = Net::HTTP.get(URI.parse("http://tinyurl.com/api-create.php?url=#{self.url}"))
+      self.shortened_url = shortened_url
+    end
   end
 
 
