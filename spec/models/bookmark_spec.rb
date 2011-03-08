@@ -42,7 +42,9 @@ describe Bookmark do
       b.page_title.should == "Apple: You Must Be 17+ To Use Opera - Slashdot"
     end
     
-    it "gets metadata"
-
+    it "gets metadata" do
+      b = Bookmark.create(:url => "http://idle.slashdot.org/story/11/03/04/1453241/Apple-You-Must-Be-17-To-Use-Opera")
+      b.meta_content_type.should == "text/html; charset=utf-8"
+    end
   end
 end

@@ -9,6 +9,7 @@ class Bookmark < ActiveRecord::Base
 
   before_save :adjust_for_redirect
   before_save :get_page_title
+  before_save :get_meta_data
   before_save :get_shortened_url
   before_create :link_to_site
 
@@ -51,10 +52,16 @@ class Bookmark < ActiveRecord::Base
     end
   end
 
+  # Uses nokogiri to return title of bookmark page
   def get_page_title
-    doc = Nokogiri::HTML(open("#{self.url}"))
-    title = doc.at_css "title"
+    @doc = Nokogiri::HTML(open("#{self.url}"))
+    title = @doc.at_css "title"
     self.page_title = title.content
+  end
+
+  def get_meta_data
+    content_type = @doc.at_css("meta[http-equiv]")["content"]
+    self.meta_content_type = content_type
   end
 
 
