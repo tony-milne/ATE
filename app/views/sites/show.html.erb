@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @site.url %>
+</p>
+
+<table>
+  <tr>
+    <th><b>Bookmarks:</b></th>
+    <th></th>
+  </tr>
+
+  <% @site.bookmarks.each do |bookmark| %>
+  <tr>
+    <td><%= link_to("#{bookmark.url}", bookmark.url) %></td>
+    <td><%= link_to("Show", bookmark) %></td>
+  </tr>
+  <% end %>
+<table>
+
+<%= link_to 'Back', sites_path %>

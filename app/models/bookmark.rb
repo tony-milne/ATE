@@ -56,8 +56,10 @@ class Bookmark < ActiveRecord::Base
 
   # Adds page title to bookmark record
   def get_page_title
-    title = @doc.at_css "title"
-    self.page_title = title.content
+    if !(@doc.at_css "title").nil?
+      title = @doc.at_css "title"
+      self.page_title = title.content
+    end
   end
 
   # Adds content type to bookmark record
@@ -79,8 +81,8 @@ class Bookmark < ActiveRecord::Base
   # Uses url to get tinyurl shortened url and adds it bookmark record
   def get_shortened_url
     begin
-      shortened_url = Net::HTTP.get(URI.parse("http://tinyurl.com/api-create.php?url=#{self.url}"))
-      self.shortened_url = shortened_url
+      short_url = Net::HTTP.get(URI.parse("http://tinyurl.com/api-create.php?url=#{self.url}"))
+      self.shortened_url = short_url
     end
   end
 

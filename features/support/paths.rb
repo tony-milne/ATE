@@ -10,6 +10,9 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
+    when /the new site page/
+      new_site_path
+
     when /the new bookmark page/
       new_bookmark_path
 
