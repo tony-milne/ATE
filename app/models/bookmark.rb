@@ -8,9 +8,14 @@ class Bookmark < ActiveRecord::Base
   validates_uniqueness_of :url
 
   before_save :adjust_for_redirect
+
+  before_save :get_page
   before_save :get_page_title
-  before_save :get_meta_data
+  before_save :get_content_type
+  before_save :get_description
+
   before_save :get_shortened_url
+
   before_create :link_to_site
 
   private
@@ -47,21 +52,34 @@ class Bookmark < ActiveRecord::Base
   # Uses url to get tinyurl shortened url
   def get_shortened_url
     begin
-      res = Net::HTTP.get(URI.parse("http://tinyurl.com/api-create.php?url=#{self.url}"))
-      self.shortened_url = res
+      shortened_url = Net::HTTP.get(URI.parse("http://tinyurl.com/api-create.php?url=#{self.url}"))
+      self.shortened_url = shortened_url
     end
   end
 
   # Uses nokogiri to return title of bookmark page
   def get_page_title
-    @doc = Nokogiri::HTML(open("#{self.url}"))
+#    @doc = Nokogiri::HTML(open("#{self.url}"))
     title = @doc.at_css "title"
     self.page_title = title.content
   end
 
-  def get_meta_data
-    content_type = @doc.at_css("meta[http-equiv]")["content"]
-    self.meta_content_type = content_type
+  def get_content_type
+    if !(@doc.at_css("meta[http-equiv='Content-Type']").nil?)
+      content_type = @doc.at_css("meta[http-equiv='Content-Type']")["content"]
+      self.meta_content_type = content_type
+    end
+  end
+
+  def get_description
+    if !(@doc.at_css("meta[name='description']").nil?)
+      description = @doc.at_css("meta[name='description']")["content"]
+      self.meta_description = description
+    end
+  end
+
+  def get_page
+    @doc = Nokogiri::HTML(open("#{self.url}"))
   end
 
 

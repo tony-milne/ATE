@@ -7,6 +7,7 @@
     <th>Tags</th>
     <th>Shortened Url</th>
     <th>Content Type</th>
+    <th>Decription</th>
     <th></th>
     <th></th>
     <th></th>
@@ -19,6 +20,7 @@
     <td><%= h bookmark.tags %></td>
     <td><%= link_to("#{bookmark.shortened_url}", bookmark.shortened_url) %></td>
     <td><%= h bookmark.meta_content_type %></td>
+    <td><%= h bookmark.meta_description %></td>
     <td><%= link_to 'Show', bookmark %></td>
     <td><%= link_to 'Edit', edit_bookmark_path(bookmark) %></td>
     <td><%= link_to 'Destroy', bookmark, :confirm => 'Are you sure?', :method => :delete %></td>

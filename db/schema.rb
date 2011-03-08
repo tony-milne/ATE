@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110308113521) do
+ActiveRecord::Schema.define(:version => 20110308123912) do
 
   create_table "bookmarks", :force => true do |t|
     t.string   "url"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20110308113521) do
     t.string   "shortened_url"
     t.string   "page_title"
     t.string   "meta_content_type"
+    t.string   "meta_description"
   end
 
   create_table "sites", :force => true do |t|
