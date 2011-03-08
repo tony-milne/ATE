@@ -13,6 +13,7 @@ module NavigationHelpers
     when /the new bookmark page/
       new_bookmark_path
 
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

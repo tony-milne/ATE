@@ -33,7 +33,7 @@ gem 'mysql2'
 group :development, :test do
   gem 'rspec-rails'
   gem 'cucumber-rails'
-  gem 'webrat'
+  gem 'capybara'
   gem 'spork'
   gem 'database_cleaner'
   gem "launchy"
