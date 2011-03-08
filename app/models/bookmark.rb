@@ -56,7 +56,7 @@ class Bookmark < ActiveRecord::Base
 
   # Adds page title to bookmark record
   def get_page_title
-    if !(@doc.at_css "title").nil?
+    if !(@doc.at_css("title").nil?)
       title = @doc.at_css "title"
       self.page_title = title.content
     end

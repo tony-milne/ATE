@@ -9,6 +9,7 @@ Feature: Manage bookmarks
     And I press "Create"
     Then I should see "http://slashdot.org"
     And I should see "news nerds"
+    And I should see "Slashdot: News for nerds, stuff that matters"
 
   # Rails generates Delete links that use Javascript to pop up a confirmation
   # dialog and then do a HTTP POST request (emulated DELETE request).

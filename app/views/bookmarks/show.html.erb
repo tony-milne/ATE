@@ -1,14 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Url:</b>
-  <%= @bookmark.url %>
-</p>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Url</th>
+    <th>Tags</th>
+    <th>Shortened Url</th>
+    <th>Content Type</th>
+    <th>Decription</th>
+  </tr>
 
-<p>
-  <b>Tags:</b>
-  <%= @bookmark.tags %>
-</p>
+  <tr>
+    <td><%= h @bookmark.page_title %></td>
+    <td><%= h @bookmark.url %></td>
+    <td><%= h @bookmark.tags %></td>
+    <td><%= link_to("#{@bookmark.shortened_url}", @bookmark.shortened_url) %></td>
+    <td><%= h @bookmark.meta_content_type %></td>
+    <td><%= h @bookmark.meta_description %></td>
+  </tr>
+</table>
 
 
 <%= link_to 'Edit', edit_bookmark_path(@bookmark) %> |
