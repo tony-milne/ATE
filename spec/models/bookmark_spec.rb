@@ -52,4 +52,12 @@ describe Bookmark do
       b.meta_description.should == "An anonymous reader writes \"From the techspot article: 'This week, the Opera web browser became the first non-native browser made available in Apple's Mac App Store. While Apple approved the browser, it still managed to hurt its competitor by putting this ridiculous label on it: \"You must be at leas..."
     end
   end
+
+  context "with bookmarks" do
+    it "searches though them" do
+      b1 = Bookmark.create(:url => "http://idle.slashdot.org/story/11/03/04/1453241/Apple-You-Must-Be-17-To-Use-Opera", :tags => "news nerds")
+      b2 = Bookmark.create(:url => "http://kotaku.com/#!5779832/lets-not-celebrate-drm-just-yet", :tags => "gaming drm")
+      Bookmark.search("drm").should == [b2]
+    end
+  end
 end

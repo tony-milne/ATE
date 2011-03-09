@@ -1,5 +1,7 @@
 require "net/http"
 require "open-uri"
+include Search
+
 class Bookmark < ActiveRecord::Base
   belongs_to :site
   
@@ -17,7 +19,6 @@ class Bookmark < ActiveRecord::Base
   before_save :get_shortened_url
 
   before_create :link_to_site
-
 
   private
 
