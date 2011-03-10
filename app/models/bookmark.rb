@@ -7,6 +7,7 @@ class Bookmark < ActiveRecord::Base
   
   validates_presence_of :url
   validate :is_valid_url
+
   validates_uniqueness_of :url
 
   before_save :adjust_for_redirect
@@ -25,17 +26,23 @@ class Bookmark < ActiveRecord::Base
   # Callback to check url entered by user is valid.  Catches timeouts,
   # invalid URIs and addresses that don't exist
   def is_valid_url
-    begin    
-      fetch_url(self.url)
-    rescue Errno::ECONNREFUSED
-      s = "entered is invalid.  Either the site was unreachable or the "
-      s += "URL was entered incorrectly."
-      errors.add(:url, s)
+    begin
+      resolved_url = fetch_url(self.url)
+      raise Exception if(self.find_by_url(resolved_url))
     rescue URI::InvalidURIError
       s = "entered is invalid."
       errors.add(:url, s)
-    rescue SocketError
-      s = "entered is invalid."
+    rescue Exception
+      s = "is unreachable."
+      errors.add(:url, s)
+    end
+  end
+
+  # Validates url for uniqueness after adjust_for_redirect is called
+  def validate_unique
+    Rails.logger.debug self.url
+    if Bookmark.find_by_url(self.url)
+      s = "is not unique"
       errors.add(:url, s)
     end
   end
