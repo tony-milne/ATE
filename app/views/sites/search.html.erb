@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+  <tr>
+    <th>Url</th>
+    <th></th>
+  </tr>
+  <% @sites.each do |site| %>
+  <tr>
+    <td><%= site.url %></td>
+    <td><%= link_to "Show", site %></td>
+  </tr>
+  <% end %>
+</table>
+

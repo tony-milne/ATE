@@ -80,4 +80,13 @@ class BookmarksController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def search
+    @bookmarks = Bookmark.search(params[:query])
+
+    respond_to do |format|
+      format.html
+      format.xml { render :xml => @bookmarks }
+    end
+  end
 end

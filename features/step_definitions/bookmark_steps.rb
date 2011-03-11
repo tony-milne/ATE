@@ -12,3 +12,9 @@ end
 Then /^I should see the following bookmarks:$/ do |expected_bookmarks_table|
   expected_bookmarks_table.diff!(tableish('table tr', 'td,th'))
 end
+
+Given /^there are already some bookmarks/ do
+  Bookmark.create!(:url => "http://www.bbc.co.uk/")
+  Bookmark.create!(:url => "http://www.kotaku.com/")
+  Bookmark.create!(:url => "http://slashdot.org/", :tags => "bbc")
+end

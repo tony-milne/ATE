@@ -31,5 +31,9 @@ describe BookmarksController do
       { :delete => "/bookmarks/1" }.should route_to(:controller => "bookmarks", :action => "destroy", :id => "1")
     end
 
+    it "recognizes and generates #search" do
+      { :get => "/bookmarks/search" }.should route_to(:controller => "bookmarks", :action => "search")
+    end
+
   end
 end

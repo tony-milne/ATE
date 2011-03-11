@@ -17,4 +17,13 @@ class SitesController < ApplicationController
     end
   end
 
+  def search
+    @sites = Site.search(params[:query])
+
+    respond_to do |format|
+      format.html
+      format.xml { render :xml => @sites }
+    end
+  end
+
 end

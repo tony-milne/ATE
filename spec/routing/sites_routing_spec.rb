@@ -11,5 +11,9 @@ describe SitesController do
       { :get => "/sites/1" }.should route_to(:controller => "sites", :action => "show", :id => "1")
     end
 
+    it "recognizes and generates #search" do
+      { :get => "/sites/search" }.should route_to(:controller => "sites", :action => "search")
+    end
+
   end
 end

@@ -12,3 +12,5 @@ end
 Then /^I should see the following sites:$/ do |expected_sites_table|
   expected_sites_table.diff!(tableish('table tr', 'td,th'))
 end
+
+

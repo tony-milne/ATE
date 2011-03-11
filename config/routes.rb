@@ -1,6 +1,15 @@
 ATE::Application.routes.draw do
-  resources :bookmarks
-  resources :sites, :only => [:index, :show]
+  resources :bookmarks do
+    collection do
+      get 'search'
+    end
+  end
+
+  resources :sites, :only => [:index, :show, :search] do
+    collection do
+      get 'search'
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

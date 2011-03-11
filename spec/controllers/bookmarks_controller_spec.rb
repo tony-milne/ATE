@@ -122,4 +122,12 @@ describe BookmarksController do
     end
   end
 
+  describe "GET 'search'" do
+    it "assigns the matching bookmarks as @bookmarks" do
+      Bookmark.stub(:search).with("bbc") { mock_bookmark }
+      get :search, :query => "bbc"
+      assigns(:bookmarks).should be(mock_bookmark)
+    end
+  end
+
 end

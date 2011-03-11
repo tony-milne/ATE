@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Url</th>
+    <th></th>
+  </tr>
+  <% @bookmarks.each do |bookmark| %>
+  <tr>
+    <td><%= bookmark.page_title %></td>
+    <td><%= bookmark.url %></td>
+    <td><%= link_to "Show", bookmark %></td>
+  </tr>
+  <% end %>
+</table>
+

@@ -8,6 +8,12 @@
 </head>
 <body>
 
+<%= form_tag("#{'search_' + controller.controller_name}".to_sym, :method => "get") do %>
+  <%= label_tag(:query, "Search for:") %>
+  <%= text_field_tag(:query) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
 <%= yield %>
 
 </body>

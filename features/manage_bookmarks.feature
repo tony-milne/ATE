@@ -47,3 +47,12 @@ Feature: Manage bookmarks
       |http://uk.lifehacker.com/|tips money-saving diy|
       |http://www.facebook.com/|social-networking|
       |http://slashdot.org/|news nerds current|
+
+  Scenario: Search for a bookmark
+  Given I am on the bookmarks page
+  And there are already some bookmarks
+  When I fill in "Search for:" with "BBC"
+  And I press "Search"
+  Then I should see "http://www.bbc.co.uk/"
+  And I should see "http://slashdot.org/"
+  
