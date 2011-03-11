@@ -1,6 +1,7 @@
 require "net/http"
 require "open-uri"
 include Search
+#include Exceptions
 
 class Bookmark < ActiveRecord::Base
   belongs_to :site
@@ -27,9 +28,12 @@ class Bookmark < ActiveRecord::Base
   def is_valid_url
     begin
       resolved_url = fetch_url(self.url)
-      raise Exception if(Bookmark.find_by_url(resolved_url))
+      raise Exceptions::UrlAlreadyExistsError if(Bookmark.find_by_url(resolved_url))
     rescue URI::InvalidURIError
       s = "entered is invalid."
+      errors.add(:url, s)
+    rescue Exceptions::UrlAlreadyExistsError
+      s = "is not unique."
       errors.add(:url, s)
     rescue Exception
       s = "is unreachable."
