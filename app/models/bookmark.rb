@@ -7,7 +7,6 @@ class Bookmark < ActiveRecord::Base
   
   validates_presence_of :url
   validate :is_valid_url
-
   validates_uniqueness_of :url
 
   before_save :adjust_for_redirect
@@ -28,7 +27,7 @@ class Bookmark < ActiveRecord::Base
   def is_valid_url
     begin
       resolved_url = fetch_url(self.url)
-      raise Exception if(self.find_by_url(resolved_url))
+      raise Exception if(Bookmark.find_by_url(resolved_url))
     rescue URI::InvalidURIError
       s = "entered is invalid."
       errors.add(:url, s)
