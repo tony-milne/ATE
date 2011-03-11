@@ -28,7 +28,9 @@ class Bookmark < ActiveRecord::Base
   def is_valid_url
     begin
       resolved_url = fetch_url(self.url)
-      raise Exceptions::UrlAlreadyExistsError if(Bookmark.find_by_url(resolved_url))
+      if !(resolved_url == self.url)
+        raise Exceptions::UrlAlreadyExistsError if(Bookmark.find_by_url(resolved_url))
+      end
     rescue URI::InvalidURIError
       s = "entered is invalid."
       errors.add(:url, s)
@@ -43,7 +45,6 @@ class Bookmark < ActiveRecord::Base
 
   # Validates url for uniqueness after adjust_for_redirect is called
   def validate_unique
-    Rails.logger.debug self.url
     if Bookmark.find_by_url(self.url)
       s = "is not unique"
       errors.add(:url, s)
